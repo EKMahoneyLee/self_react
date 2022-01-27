@@ -6,7 +6,7 @@ function Main() {
     return ( 
         <>
             <div className='container mt-5'>
-            <h5>The Lists</h5>
+            <h4>The Lists</h4>
             {/* Status2 */}
             <ol>
                 <li><a href="UseState">useState</a></li>
