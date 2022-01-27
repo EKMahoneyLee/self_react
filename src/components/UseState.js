@@ -10,7 +10,7 @@ function UseState () {
       return(
         <>
         <div className='container'>
-          <h1><a href="/" >Go back to Main</a></h1>
+          <h1><h4 ><Link to={'/'} >Go back to Main</Link></h4></h1>
 
           <h3 className='mt-4'>{ year }</h3>
           <button onClick={ () => setYear( year+1 )}>New Year!</button>

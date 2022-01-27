@@ -20,7 +20,7 @@ function Checkbox(){
     return (
         <>
             <div className='container mt-5'>
-                <h4 ><a href="/" >Go back to Main</a></h4>
+                <h4 ><Link to={'/'} >Go back to Main</Link></h4>
                 <div className='container mt-4'>
                     <input type="checkbox" 
                             value={ checked }

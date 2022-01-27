@@ -15,7 +15,7 @@ function ReducerCheckbox(){
     return (
         <>
             <div className='container mt-5'>
-                <h4 ><a href="/" >Go back to Main</a></h4>
+            <h4 ><Link to={'/'} >Go back to Main</Link></h4>
                 <input type="checkbox" 
                         value={ checked }
                         onChange={ toggle }

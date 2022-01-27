@@ -12,3 +12,12 @@ so I can server on one of there hosing providers
 to use boothstrap => 아래 설치
 npm install react-bootstrap 
 npm install bootstrap
+
+
+디플로이중 에러발생
+"Treating warnings as errors because process.env.CI = true. 
+Most CI servers set it automatically."
+;   / "build": "react-scripts build",
+;     "build": "set \"CI=false\" && react-scripts build"
+변경후 아래 링크 따라함으로써 문제 해결
+https://dev.to/kapi1/solved-treating-warnings-as-errors-because-of-process-env-ci-true-bk5

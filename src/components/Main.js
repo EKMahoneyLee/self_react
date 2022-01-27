@@ -9,20 +9,15 @@ function Main() {
             <h4>The Lists</h4>
             {/* Status2 */}
             <ol>
-                <li><a href="UseState">useState</a></li>
-                <li><a href="checkbox">CheckBox with useState</a></li>
-                <li><a href="fetchData">Fetch Data</a></li>
-                <li><a href="reducerCheckbox">reducer with checkbox</a></li>
+                <li><Link to={"UseState"}>useState</Link></li>
+                <li><Link to={"checkbox"}>CheckBox with useState</Link></li>
+                <li><Link to={"fetchData"}>Fetch Data</Link></li>
+                <li><Link to={"reducerCheckbox"}>reducer with checkbox</Link></li>
 
             </ol>
 
             {/* Status3 */}
-            <ol>
-                <li><a href="UseState">useState</a></li>
-                <li><a href="UseState">useState</a></li>
-                <li><a href="UseState">useState</a></li>
-                <li><a href="UseState">useState</a></li>
-            </ol>
+           
         </div>
         </>
     );
