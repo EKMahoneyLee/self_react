@@ -1,11 +1,10 @@
 import React from 'react';
 import Main from './components/Main';
-import Basic from './components/first/Basic';
-import Checkbox from './components/first/Checkbox.js';
-import FetchData from './components/first/FetchData.js';
-import UseState from './components/first/UseState';
-import ReducerCheckbox from './components/first/ReducerCheckbox.js';
-
+import Basic from './components/second/Basic.js';
+import Checkbox from './components/second/Checkbox.js';
+import FetchData from './components/second/FetchData.js';
+import UseState from './components/second/UseState';
+import ReducerCheckbox from './components/second/ReducerCheckbox.js';
 import { BrowserRouter as Router,Route,Routes  } from 'react-router-dom';
 
 
@@ -21,9 +20,6 @@ class App extends React.Component {
               <Route exact path='/second/checkbox' component={ Checkbox } />
               <Route exact path='/second/fetchData' component={ FetchData } />
               <Route exact path='/second/reducerCheckbox' component={ ReducerCheckbox } />
-
-              
-
             {/* </Routes> */}
         </Router>
       </React.Fragment>
