@@ -41,7 +41,7 @@ function Checkbox(){
                     <input value={ val2 } 
                     onChange={e => setVal2(e.target.value)}/>
                 </label>
-                <br></br><br></br><img src="./images/2.jpg" alt="image" width={500} height={500}/>
+                <br></br><br></br><img src="../images/1-5.jpg" alt="image" width={500} height={500}/>
             </div>
         </>
     )

@@ -27,7 +27,7 @@ function FetchData(){
             <div className='container mt-5'>
             <h4 ><Link to={'/'} >Go back to Main</Link></h4>
                 <GitHubUser login="moonhighway" />  
-                <br></br><br></br><img src="./images/3.jpg" alt="image" width={600} height={700}/>
+                <br></br><br></br><img src="../images/1-6.jpg" alt="image" width={600} height={700}/>
             </div>
         </> 
     ) 

@@ -21,7 +21,7 @@ function ReducerCheckbox(){
                         onChange={ toggle }
                 />
                 { checked? "checked": "Not checked" }
-                <br></br><br></br><img src="./images/4.jpg" alt="image" width={600} height={700}/>
+                <br></br><br></br><img src="../images/1-7.jpg" alt="image" width={600} height={700}/>
             </div>
         </>
     )
