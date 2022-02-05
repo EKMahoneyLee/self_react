@@ -3,9 +3,12 @@ import 'bootstrap/dist/css/bootstrap.css';
 import { Link, withRouter } from 'react-router-dom';
 
 function GitHubUser( {login}){
-    const [data, setData] = useState(null);
+    // const [data, setData] = useState(null);      //first video
+    const [data, setData] = useState([]);
+
     useEffect( () => {
-        fetch(`https://api.github.com/users/${ login}`)
+        // fetch(`https://api.github.com/users/${ login}`)   //first video
+        fetch(`https://api.github.com/users`)
         .then(res => res.json())
         .then(setData)
         .catch(console.error);
@@ -13,12 +16,20 @@ function GitHubUser( {login}){
 
     if(data){
         return <>
-                <h1>{data.login}</h1>
-                <div>{JSON.stringify(data)}</div> 
-                <img src={data.avatar_url} width={ 100 }/>
+                {/* <h1>{data.login}</h1>         //first video
+                <div>{JSON.stringify(data)}</div>         
+                <img src={data.avatar_url} width={ 100 }/> */}   
+                <ul>
+                    {data.map((user) => (
+                        <li key ={user.id}>{ user.login }</li>
+                    ))}
+                </ul>
+                <button onClick={ () => setData([])}>Remove Data </button>
                 </>
     }
-    return null;
+    // return null;   //first video
+    return <p> No users</p>;
+
 }
 
 function FetchData(){
