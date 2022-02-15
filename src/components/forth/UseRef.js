@@ -35,14 +35,19 @@ function CustomHookApp(){
 }
 
 function UseStateApp(){
+    //useState는 두개의 아이템을 가지고 있는 어레이를 리턴한다 
+    //첫번째는 state를 담은 그릇같은 역활, 두번째는 function which can update state.
+    //useState( 여기안에 들어가는 것은 inital state이다. 앱이 처음 렌더가 될때 이것이 프린트 될것이다.)
+    
     const [sound, setSound]= useState("");
     const [color, setColor]= useState("#000000");
 
     const submit = (e) => {
         e.preventDefault();
         
-        //using useState
         alert( `${sound} sounds like ${color}`);
+
+        //앱 렌더후 디폴트 시켜줌
         setSound("");
         setColor("#000000");
         

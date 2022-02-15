@@ -1,9 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import { Link, withRouter } from 'react-router-dom';
-import { FaStar } from "react-icons/fa"; //=> npm install react-icons --save //npm install @react-icons/all-files --save
 import React,  { useState , useEffect} from 'react';
 
-
+// The `useEffect` Hook is useful to perform additional work behind the scenes,
+// without affecting the appearance of the webpage
 
 function App(){
     const [name, setName] =useState("aegi")

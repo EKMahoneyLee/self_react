@@ -21,3 +21,9 @@ Most CI servers set it automatically."
 ;     "build": "set \"CI=false\" && react-scripts build"
 변경후 아래 링크 따라함으로써 문제 해결
 https://dev.to/kapi1/solved-treating-warnings-as-errors-because-of-process-env-ci-true-bk5
+
+
+
+; 다른 버전의 router를 깔면 버전이 안 맞아서 문제 생길시 이 파일은 아래의 두개를 깔면 됨
+npm install react-router-dom@5.2.0
+npm install react-router@5.2.0 

@@ -9,20 +9,17 @@ function Checkbox(){
     // const [checked, setChecked] = useState(true);
     //useReducer와 함계 update => useState 와 useReducer 사용시 function은 같지만, 
     //project가 커질수록 reducer를 사용해서 간결하게 하는 것이 좋음....
+    //useReducer도 두개의 argument취함 (function and initial state)
     const [checked, toggle] = useReducer(
         (checked) => !checked,
         false
     );
 
+
+
+    //for the input code
     const [val, setVal] = useState("");
     const [val2, setVal2] = useState("");
-
-
-    useEffect( () => {
-        // alert(`checked: ${checked.toString()}`);
-    })
-
-
     useEffect( () => {
         console.log(`first field ${ val }`)
     },[val])
@@ -61,7 +58,7 @@ function Checkbox(){
                     <input value={ val2 } 
                     onChange={e => setVal2(e.target.value)}/>
                 </label>
-                <br></br><br></br><img src="../images/1-5.jpg" alt="image" width={500} height={500}/>
+                <br></br><br></br><img src="../images/1-5.jpg" alt="code" width={500} height={500}/>
             </div>
         </>
     )
