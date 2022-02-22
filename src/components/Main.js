@@ -6,7 +6,7 @@ function Main() {
     return ( 
         <>
             <div className='container mt-5'> 
-            <h6>Learning React.js</h6>
+            <h6>2:Learning React.js</h6>
             <ol>
                 <li><Link to={"second/basic"}>Basic</Link></li>
                 <li><Link to={"second/UseState"}>UseState</Link></li>
@@ -15,12 +15,12 @@ function Main() {
                 <li><Link to={"second/reducer"}>Reducer (updated!)</Link></li>
             </ol>
 
-            <h6>Task App using React and TypeScript</h6>
+            <h6>3: Task App using React and TypeScript</h6>
             <ol>
                 <li><a href="https://taskbyek.netlify.app/">Task</a></li>
             </ol>
 
-            <h6>Hooks</h6>
+            <h6>4: Hooks</h6>
             <ol>
                 <li><Link to={"forth/useStateStars"}>UseState Stars</Link></li>
                 <li><Link to={"forth/useEffect"}>UseEffect </Link></li>
@@ -29,13 +29,17 @@ function Main() {
                 <li><Link to={"forth/useFetch"}>UseFetch</Link></li>
             </ol>
 
-            <h6>Component Tree</h6>
+            <h6>5: Component Tree</h6>
             <ol>
-                <li><Link to={"fifth/componentTree"}>Component Tree</Link></li>
-
+                <li><Link to="fifth/componentTree">Component Tree</Link></li>
             </ol>
 
-            <h6>The lists if regex examples</h6>
+            <h6>6: Weather App</h6>
+            <ol>
+                <li><a href="https://ekweather.netlify.app/">Weather app using react</a></li>
+            </ol>
+
+            <h6>10: The lists if regex examples</h6>
             <ol>
                 <li><Link to={"regex"}>Regex</Link></li>
             </ol>
