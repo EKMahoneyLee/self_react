@@ -39,6 +39,16 @@ function Main() {
                 <li><a href="https://ekweather.netlify.app/">Weather app using react</a></li>
             </ol>
 
+            <h6>7: Building Modern Projects with React</h6>
+            <ol>
+                <li><Link to={"seventh/shouldComponentUpdate"}>ShouldComponentUpdate</Link></li>
+            </ol>
+
+            <h6>8: ????</h6>
+            <ol>
+                <li><Link to={"eighth/askAboutEK"}>Ask About EK</Link></li>
+            </ol>
+
             <h6>10: The lists if regex examples</h6>
             <ol>
                 <li><Link to={"regex"}>Regex</Link></li>

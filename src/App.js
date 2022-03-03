@@ -22,7 +22,13 @@ import UseFetch from './components/forth/UseFetch.js';
 import ComponentTree from './components/fifth/ComponentTree.js';
 
 //seventh
+import ShouldComponentUpdate from './components/seventh/ShouldComponentUpdate.js';
+
+
 //eighth
+import AskAboutEK from './components/eighth/AskAboutEK.js';
+
+
 //nineth
 //tenth
 import Regex from './components/Regex';
@@ -48,6 +54,10 @@ class App extends React.Component {
               <Route exact path='/forth/useFetch' component={ UseFetch } />
 
               <Route exact path='/fifth/componentTree' component={ ComponentTree } />
+
+              <Route exact path='/seventh/shouldComponentUpdate' component={ ShouldComponentUpdate } />
+
+              <Route exact path='/eighth/askAboutEK' component={ AskAboutEK } />
               
               <Route exact path='/regex' component={ Regex } />
             {/* </Routes> */}
