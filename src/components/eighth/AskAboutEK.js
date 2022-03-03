@@ -11,6 +11,107 @@ const linkstyle ={
   textDecoration: 'none'
 }
 
+const hrStyle = {
+  height: 10,
+  borderWidth:0,
+  color:'gray',
+}
+
+class CheckUserAge extends React.Component {
+  constructor(props) {
+    super(props);
+    // Change code below this line
+this.state = {
+  userAge: '',
+  input: ''
+}
+    // Change code above this line
+    this.submit = this.submit.bind(this);
+    this.handleChange = this.handleChange.bind(this);
+  }
+  handleChange(e) {
+    this.setState({
+      input: e.target.value,
+      userAge: ''
+    });
+  }
+  submit() {
+    this.setState(state => ({
+      userAge: state.input
+    }));
+  }
+  render() {
+    const buttonOne = <button onClick={this.submit}>Submit</button>;
+    const buttonTwo = <button>You May Enter</button>;
+    const buttonThree = <button>You Shall Not Pass</button>;
+    return (
+      <div>
+        <h3>Enter Your Age to Continue</h3>
+        <input
+          style={inputStyle}
+          type='number'
+          value={this.state.input}
+          onChange={this.handleChange}
+        />
+        <br />
+        {/* Change code below this line */}
+
+      {this.state.userAge ===''? buttonOne:
+       this.state.userAge>= 18? buttonTwo : buttonThree}
+        {/* Change code above this line */}
+      </div>
+    );
+  }
+}
+
+
+
+
+class Results extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return (
+      <h1>
+      {this.props.fiftyFifty ? "You Win!" : "You Lose!"}
+      </h1>
+    )
+  };
+};
+
+class GameOfChance extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      counter: 1
+    }
+    this.handleClick = this.handleClick.bind(this);
+  }
+  handleClick() {
+    this.setState({
+      counter: this.state.counter + 1 // change code here
+    });
+  }
+  render() {
+    const expression = Math.random() >= 0.5 ? true : false
+    return (
+      <div>
+        <button onClick={this.handleClick}>Play Again</button>
+        { /* change code below this line */ }
+        <Results fiftyFifty={expression} />
+        { /* change code above this line */ }
+        <p>{'Turn: ' + this.state.counter}</p>
+      </div>
+    );
+  }
+};
+
+
+
+
+
+
 class AskAboutEK extends React.Component {
   constructor(props) {
     super(props);
@@ -69,6 +170,8 @@ class AskAboutEK extends React.Component {
             return (
                 <div  className='container mt-5'>
                     <h4 ><Link to={'/'} style={linkstyle}>Go back to Main</Link></h4>
+                    <hr style={hrStyle}></hr>
+                    <h2>Anything about EK</h2>
                     <input
                     type='text'
                     value={this.state.userInput}
@@ -78,9 +181,13 @@ class AskAboutEK extends React.Component {
                     <br />
                     <button onClick={this.ask}>Ask Anything About Eunkyung(EK)</button>
                     <br />
-                    <h3>Answer:</h3>
-                    <p>{answer}
-                    </p>
+                    <h4>Answer:</h4>
+                    <p>{answer}</p>
+                    <hr style={hrStyle}></hr>
+                    < CheckUserAge/>
+
+                    <hr style={hrStyle}></hr>
+                    <GameOfChance />
                 </div>
             );
     }
