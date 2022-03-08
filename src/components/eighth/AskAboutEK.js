@@ -179,7 +179,7 @@ class AskAboutEK extends React.Component {
                     style={inputStyle}
                     />
                     <br />
-                    <button onClick={this.ask}>Ask Anything About Eunkyung(EK)</button>
+                    <button onClick={this.ask}>Click</button>
                     <br />
                     <h4>Answer:</h4>
                     <p>{answer}</p>
