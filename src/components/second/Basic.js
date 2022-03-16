@@ -111,9 +111,9 @@ export default withRouter(Basic);
 // );
 
 //array destructing
-const [ , , snack] = [
-  "candy",
-  "chocolate",
-  "ice cream"
-];
-console.log(snack);
+// const [ , , snack] = [
+//   "candy",
+//   "chocolate",
+//   "ice cream"
+// ];
+// console.log(snack);

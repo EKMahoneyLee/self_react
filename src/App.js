@@ -1,36 +1,21 @@
 import React from 'react';
 import { BrowserRouter as Router,Route } from 'react-router-dom';
-
-//main 
 import Main from './components/Main';
-
-//second
 import Basic from './components/second/Basic.js';
 import Checkbox from './components/second/Checkbox.js';
 import FetchData from './components/second/FetchData.js';
 import UseState from './components/second/UseState';
 import Reducer from './components/second/Reducer.js';
-
-//forth
 import UseStateStars from './components/forth/UseStateStars.js';
 import UseEffect from './components/forth/UseEffect.js';
 import UseRef from './components/forth/UseRef.js';
 import UseContext from './components/forth/UseContext.js';
 import UseFetch from './components/forth/UseFetch.js';
-
-//fifth
 import ComponentTree from './components/fifth/ComponentTree.js';
-
-//seventh
 import ShouldComponentUpdate from './components/seventh/ShouldComponentUpdate.js';
-
-
-//eighth
 import AskAboutEK from './components/eighth/AskAboutEK.js';
+import ConditionalStyle from './components/ninth/ConditionalStyle';
 
-
-//nineth
-//tenth
 import Regex from './components/Regex';
 
 class App extends React.Component {
@@ -58,6 +43,8 @@ class App extends React.Component {
               <Route exact path='/seventh/shouldComponentUpdate' component={ ShouldComponentUpdate } />
 
               <Route exact path='/eighth/askAboutEK' component={ AskAboutEK } />
+              
+              <Route exact path='/ninth/conditionalStyle' component={ ConditionalStyle } />
               
               <Route exact path='/regex' component={ Regex } />
             {/* </Routes> */}
